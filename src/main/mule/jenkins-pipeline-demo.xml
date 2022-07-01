@@ -6,7 +6,7 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="1097bdc1-e7fa-4a62-b3fb-6403cf948d67" >
-		<http:listener-connection host="0.0.0.0" port="8082" />
+		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="jenkins-pipeline-demoFlow" doc:id="c76c82b2-1009-4afa-959f-c36960d0057e" >
 		<http:listener doc:name="Listener" doc:id="8446d06a-eca7-4864-b086-412acdabe4c0" config-ref="HTTP_Listener_config" path="/jp-demo"/>
